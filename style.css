@@ -9,13 +9,14 @@ body {
     background-color: #153248;
     width: 100%;
     height: 60px;
-    position: fixed;
+     position: fixed;
+    z-index: 1; 
 }
 
 .navtext {
     color: #FAE9D7;
     position: relative;
-    left: 150px;
+    left: 500px;
     padding-top: 10px;
     text-align: right;
     word-spacing: 3em;
@@ -80,6 +81,7 @@ height: 600px;
 left: 180.85px;
 top: -70px;
 transform: rotate(1.36deg);
+z-index: 0;
 }
 
 .fork {
@@ -88,19 +90,54 @@ transform: rotate(1.36deg);
     max-height: 500px;
     top: 220px;
     left: 570px;
+    z-index: 0;
 }
+
+/* .scroll {height: 800px; background-color: #153248;} */
+
+div.scrollmenu {
+  background-color: #153248;
+  overflow: auto;
+  white-space: nowrap;
+padding-top: 30px;
+}
+
+.scrollmenu::-webkit-scrollbar {
+  display: none;
+}
+.scrollmenu img {display: inline-block; height: 300px; margin: 50px;}
+
+.arrow1 {transform: rotate(90deg); height: 50px; position: absolute; top: 800px; left: 20px; z-index: 0}
+.arrow2 {transform: rotate(-90deg); height: 50px; position: absolute; top: 800px; left: 1180px; z-index: 0}
+#recipes h1 {position: absolute; top: 615px; left: 510px; z-index: 0; color: #AFCBE1; font-weight: 800;
+font-size: 50px;}
 
 /* Recipe collapsable */
 
-#answer {background-color: #D2E5F2;
-    width: 1000px;
-    margin: auto;
+#answer {
+    background-color: #D2E5F2; 
     padding-bottom: 100px;
-    padding-top: 20px;}
+    padding-top: 20px;
+}
 
-.container h1 {
+button {
+    background-color: #153248;
+    border: none;
+    height: 50px;
+    width: 200px;
+    margin-left: 55px;
+}
+
+button h4 {
+    color: white;
+    font-weight: bolder;
+    padding-top: 10px;
+}
+
+button:hover {background-color: #D2E5F2;}
+
+#recipes {
     margin: auto;
-    padding-top: 50px;
     text-align: center;
     font-weight: bold;
     color: #355975;
@@ -117,16 +154,16 @@ transform: rotate(1.36deg);
 
 .collapse h3 {
     margin: auto;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px 120px;
     text-align: center;
     font-weight: bold;
     color: #355975;
     font-size: 1vw;
 }
 
-.row h3 {font-size: 1em;
-    color: white;
+.row h3 {
+    font-size: 1em;
+    color: #153248;
     text-align: center;
     margin: auto;
    /* position: absolute;
@@ -139,19 +176,6 @@ transform: rotate(1.36deg);
     margin-top: 200px;
 }
 
-button {
-    background-color: #D2E5F2;
-    border: none;
-    height: 50px;
-    width: 200px;
-    margin-left: 55px;
-}
-
-button h4 {
-    color: white;
-    font-weight: bolder;
-    padding-top: 10px;
-}
 
 /* recipe grid */
 
@@ -166,9 +190,9 @@ background-position: center; margin-bottom: 40px;}
 .pic8 {background-image: url(img/1588_9_1439908243.jpg); background-size: 250px;height: 250px;background-repeat: no-repeat; background-position: center;margin-bottom: 40px;}
 .pic9 {background-image: url(img/996_2_1438704243.jpg); background-size: 250px; height: 250px;background-repeat: no-repeat; background-position: center;margin-bottom: 40px;}
 
+/* more page */
 
-
-.more {
+#more {
     margin: 50px;
 }
 
@@ -198,10 +222,10 @@ background-position: center; margin-bottom: 40px;}
 }
 
 
-.signup {
+ .signup {
     height: 136px;
     background-color: #355975;
-    margin-bottom: 20px;
+    margin-bottom: 20px; 
 }
 
 .row h2 {
@@ -213,19 +237,47 @@ background-position: center; margin-bottom: 40px;}
     font-size: 4vw;
 }
 
-.more h1 {
+#more h1 {
     margin: auto;
-    padding-top: 50px;
+    padding-bottom: 40x;
     text-align: center;
-    font-weight: bold;
+    font-weight: 800;
     color: #355975;
-    font-size: 4vw;
+    font-size: 5vw;
 }
+
+.factsheet h2, .donate h2 {
+    text-align: left;
+    padding-left: 10px;
+    font-weight: 700;
+    color: #FAE9D7;
+    padding-top: 10px;
+}
+
+.contact h2, .signup h2 {
+    font-size: 3vw;
+    padding-top: 10px;
+    padding-left: 10px;
+    color: #AFCBE1;
+    font-weight: bolder;
+}
+
+ .arrow4, .arrow3 {transform: rotate(-90deg); height: 60px; float: right; margin-top: 30px;}
+
+.footer {
+    background-color: #153248;
+    width: 100%;
+    height: 60px;
+}
+
 
 /* Responsive media */
 
  @media (min-width: 768px) { 
-     .pic {height: 170px;}}
+     .pic {height: 170px;}
+     
+     }
+}
           
 @media (min-width: 1200px){
     .pic {height: 150px;}}

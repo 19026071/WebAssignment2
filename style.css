@@ -29,6 +29,7 @@ body {
     max-height: 50px; 
     margin: 5px;
 } 
+ .navarrow {display: none;}
 
 a {
     text-decoration: none;
@@ -64,10 +65,8 @@ margin: auto;
 padding-left: 250px;
 padding-right: 250px;
 padding-top: 60px;
-font-family: Avenir Next;
-font-style: normal;
 font-weight: 600;
-font-size: 20px;
+font-size: 2vw;
 line-height: 120%;
 text-align: center;
 letter-spacing: -0.055em;
@@ -176,6 +175,18 @@ button:hover {background-color: #D2E5F2;}
     margin-top: 200px;
 }
 
+.refine, .search, .sort {
+    border-bottom-color:#153248;
+    border-bottom-style: solid;
+    border-bottom-width: thick;
+    padding: 0px;
+    max-width: 250px;
+    color: #153248;
+    margin: auto;
+    object-position: center;
+}
+
+#grid {margin-top: 40px;}
 
 /* recipe grid */
 
@@ -189,6 +200,9 @@ background-position: center; margin-bottom: 40px;}
 .pic7 {background-image: url(img/1572_2_1437661500.jpg); background-size: 250px;height: 250px;background-repeat: no-repeat; background-position: center;margin-bottom: 40px;}
 .pic8 {background-image: url(img/1588_9_1439908243.jpg); background-size: 250px;height: 250px;background-repeat: no-repeat; background-position: center;margin-bottom: 40px;}
 .pic9 {background-image: url(img/996_2_1438704243.jpg); background-size: 250px; height: 250px;background-repeat: no-repeat; background-position: center;margin-bottom: 40px;}
+
+
+
 
 /* more page */
 
@@ -264,6 +278,20 @@ background-position: center; margin-bottom: 40px;}
 
  .arrow4, .arrow3 {transform: rotate(-90deg); height: 60px; float: right; margin-top: 30px;}
 
+.name, .email {
+    background-color: white;
+    color: lightgray;
+    font-size:1.5vw;
+    position: relative;
+    top: -60px;
+    display: inline-block;
+    padding-right: 250px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+
+
 .footer {
     background-color: #153248;
     width: 100%;
@@ -273,13 +301,30 @@ background-position: center; margin-bottom: 40px;}
 
 /* Responsive media */
 
- @media (min-width: 768px) { 
+ @media (max-width: 768px) { 
      .pic {height: 170px;}
-     
+     .navtext {display: none;}
+     .navarrow {display: block;
+         height: 50px;
+         float: left;
+         margin-left: 120px;}
+     .fork {max-height: 250px; 
+            left: 220px;
+            top: 300px;}
+     .dots {
+         width: 600px;
+height: 500px;
+left: -20px;
+top: -10px;}
+.home h1 {font-size: 60px;}
+    .home h4 {
+padding-left: 50px;
+padding-right: 50px;
      }
-}
+
           
 @media (min-width: 1200px){
-    .pic {height: 150px;}}
+    .pic {height: 150px;}
+}
 
           

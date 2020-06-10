@@ -8,7 +8,29 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="wedges.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>  
+    <script src="js/bootstrap.min.js"></script> 
+    <script>
+    function shownav() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+        
+       /* document.getElementById('hello_btn') .addEventListener('click', function(){
+        document.getElementById('hello_btn') .style.color = 'yellow'; */
+       
+    window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show'); 
+      }
+    }
+  }
+}  
+        
+        </script> 
     
     
     </head>
@@ -17,14 +39,23 @@
     <div class="nav">
         <img class='logo' src="img/logo.png" alt="logo"/>
        <div class="navtext"> 
-        <a href="  ">Home</a>
-        <a href="  ">Issue</a>
-        <a href="#recipes"><u>Recipes</u></a> 
-        <a href="#more"> More</a>
+        <a href="index.html">Home</a>
+        <a href="index.html#info" >Issue</a>
+        <a href="index.html#recipes"><u>Recipes</u></a> 
+        <a href="index.html#more"> More</a>
         </div>
+        
+         <div class="dropdown">
+  <a onclick="shownav()" class="dropbtn">Nav</a>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="index.html#info">Issue</a>
+    <a href="index.html#recipes">Recipes</a>
+    <a href="index.html#more">More</a>
+  </div>
+</div>
     </div>
     
-        <p class="back"><u>Back to Recipes</u></p>
+        <p><a href="index.html" class="back"><u>Back to Recipes</u></a></p>
         
         <div class="container">
             <div class="row">
@@ -95,7 +126,6 @@
         
     
             <div id="recipes">
-    <h2>Explore more recipes</h2>
     <img class="arrow1" src="img/arrowbeige.png">
    <img class="arrow2" src="img/arrowbeige.png"> 
     <div class="scrollmenu">
@@ -108,7 +138,7 @@
     </div>
         
 
-<div class="footer">footer</div>
+<div class="footer">Recipe imagages copyright © 2020 JAMIE OLIVER ENTERPRISES LIMITED.  News site content copyright of the publisher.  All other images original work.  5/06/2020</div>
         
     
     </body>

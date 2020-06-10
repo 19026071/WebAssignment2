@@ -47,27 +47,16 @@ body {
     font-weight: bolder;
     font-size: 40px;
     cursor: pointer;
-}
-
-
-
-/* .dropbtn h4 {visibility: hidden;} */
-
-/* .dropbtn img {max-height: 50px; position: absolute; right: 10px;} */
-
-/* Dropdown button on hover & focus */
-/* .dropbtn:hover, .dropbtn:focus {
-  background-color: #2980B9;
-} */
+    }
 
 
 .dropdown {
   position: relative;
   display: block;
-float: right;
-}
+    float: right;
+    }
 
-/* Dropdown Content (Hidden by Default) */
+
 .dropdown-content {
   display: none;
   position: absolute;
@@ -78,7 +67,6 @@ float: right;
     right:0
 }
 
-/* Links inside the dropdown */
 .dropdown-content a {
   color: #1A354B;
   padding: 12px 16px;
@@ -86,14 +74,11 @@ float: right;
   display: block;
 }
 
-/* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color: #AFCBE1}
 
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+
 .show {display:block;}
 
-
-/* landing page */
 
 .home {
     height: 605px;
@@ -114,7 +99,7 @@ float: right;
 .home h4 {
     margin: auto;
     padding-left: 50px;
-        padding-right: 50px;
+    padding-right: 50px;
     padding-top: 40px;
     font-weight: 600;
     font-size: 15px;
@@ -127,10 +112,9 @@ float: right;
 .dots {
     position: absolute;
     width: 500px;
-         height: 450px;
-         left: -50px;
-        top: -30px;
-
+    height: 450px;
+    left: -50px;
+    top: -30px;
     transform: rotate(1.36deg);
     z-index: 0;
 }
@@ -139,8 +123,8 @@ float: right;
     position: absolute;
     transform: rotate(90deg);
     max-height: 250px; 
-        left: 180px;
-            top: 300px;
+    left: 180px;
+    top: 300px;
     z-index: 0;
     }
 
@@ -148,12 +132,12 @@ float: right;
     position: absolute;
     top: 510px;
     left: 150px;
-        max-height: 70px;
+    max-height: 70px;
     }
 
 /*Info Page */
 
-.info {
+#info {
     background-color: #1A354B;
     font-weight: 600;
     font-size: 20px;
@@ -163,9 +147,9 @@ float: right;
 }
 
 .block1 {
-        max-width: 350px;
-        padding-right: 30px; 
-        padding-left: 30px;
+    max-width: 350px;
+    padding-right: 30px; 
+    padding-left: 30px;
     padding-top: 30px;
 }
 
@@ -184,7 +168,7 @@ float: right;
 
 .block2 {
     padding-top: 30px;
-}
+    }
 
 .block2 h1 {
     padding-top: 20px;
@@ -204,18 +188,18 @@ float: right;
 
 .block3 {  
     padding-top: 50px;
-        width: 350px;
-        padding-bottom: 100px;
+    width: 350px;
+    padding-bottom: 100px;
 }
 
 .block3 h1 {
     font-size: 40px;
     max-width: 350px;
     padding: 0;
-font-weight: 900;
-line-height: 90%;
-letter-spacing: -0.03em;
-color: #F8EBDE;
+    font-weight: 900;
+    line-height: 90%;
+    letter-spacing: -0.03em;
+    color: #F8EBDE;
     }
 
 .block3 p {
@@ -379,6 +363,7 @@ button:hover {
     color: #355975;
     font-size: 4vw;
     }
+
 .collapse h2 {
     margin: auto;
     padding-top: 30px;
@@ -497,7 +482,9 @@ background-position: center; margin-bottom: 40px;}
     font-size: 30px;
     }
 
-.factsheet, .donate {height: 80px;}
+.factsheet, .donate {
+    height: 80px;
+    }
 
 .factsheet h2, .donate h2 {
     text-align: left;
@@ -538,22 +525,20 @@ background-position: center; margin-bottom: 40px;}
     padding-left: 5px;
 }
 
-/* .tick {
-width: 50px;
-height: 50px;
-background: #C94334;
-position: relative;
-left: 625px;
-top: -110px;
-} */
-
 .footer {
     background-color: #153248;
     width: 100%;
     height: 60px;
+    color: #FAE9D7;
+    font-size: 12px;
+    text-align: center;
+    margin: auto;
+    padding-top: 10px;
 }
 
-.footer p {color: antiquewhite;}
+
+
+
 
 /* Responsive media */
 
@@ -578,9 +563,9 @@ top: -110px;
     .dropdown {
         display: none;
         color: transparent;
-         height: 50px;
-         float: right;
-         margin-left: 60px;
+        height: 50px;
+        float: right;
+        margin-left: 60px;
     }
          
     
@@ -591,28 +576,29 @@ top: -110px;
     left: 570px;}
      
     .dots {
-          width: 907.94px;
+    width: 907.94px;
     height: 600px;
     left: 180.85px;
-    top: -70px;}
+    top: -100px;
+    }
      
     .home h1 {font-size: 90px;}
      
     .home h4 {
         padding-left: 250px;
         padding-right: 250px;
-        font-size: 30px; }
+        font-size: 30px; 
+        }
     
     .arrow5 {
-    max-height: 100px;
-    top: 510px;
-    left: 540px;
-    }
+        max-height: 100px;
+        top: 510px;
+        left: 540px;
+        }
     
     .block1{
         margin-left: 50px;
-        
-    }
+        }
     
     .block1 h1 {
     padding-top: 50px;
@@ -634,11 +620,13 @@ top: -110px;
     height: 250px;
     }
     .sauce {
+        padding: 0;
         width: 300px;
-    height: 200px;
-    margin-left: 350px;
-    padding-bottom: 20px  
+    height: 150px;
+    margin-left: 150px;
+    padding-bottom: 20px;  
     }
+    
     .fish{
     width: 550px;
     height: 200px;
@@ -646,7 +634,6 @@ top: -110px;
     
     .block2 {
         left: 500px;
-        top: -100px;
     }
     
     .block2 h1 {
@@ -659,9 +646,10 @@ top: -110px;
     padding-left: 80px;
     }
     
-    .explore {
-      top: 2580px;
-        }
+   .explore {
+    position: absolute;
+      top: 2540px;
+        } 
 
     
     .block3 {
@@ -669,11 +657,11 @@ top: -110px;
         top: -100px;
     }
 
-.block3 h1 {
-width: 700px;
-font-weight: 900;
-font-size: 48px;
-}
+    .block3 h1 {
+    width: 700px;
+    font-weight: 900;
+    font-size: 48px;
+    }
 
     .block3 p{
         width: 600px;
@@ -681,35 +669,31 @@ font-size: 48px;
     
     .arrow1 {
     height: 70px;
-    top: 2990px;
+    top: 2960px;
     left: 20px;
     }   
 
-.arrow2 {
+    .arrow2 {
     height: 70px;
-    top: 2990px;
+    top: 2960px;
     left: 1180px;
     }
 
-#recipes h1 {
-    top: 2770px;
+    #recipes h1 {
+    top: 2740px;
     left: 510px;
     }
     
-    
-    
     .pic {height: 170px;}
-    
-  /*  .factsheet, .donate {
-        max-height: 70px; 
-    } */
+  
     
     .email, .name {
         margin-bottom: 10px;
     }
     
     .arrow4, .arrow3{
-        height: 70px; margin-top: 30px;
+        height: 70px;
+        margin-top: 30px;
     }
     
     .donate, .factsheet {
@@ -718,12 +702,8 @@ font-size: 48px;
     background-size: 730px;
     }
 
-
-
 .contact {
     height: 448px;}
-
-
 
  .signup {
     height: 136px;
@@ -772,8 +752,8 @@ font-size: 48px;
 
   
 
-/* md devices */
-/* @media (min-width: 992px) {
+/* md devices 
+ @media (min-width: 992px) {
      .block1 {
         height: auto;
         width: 100%;
@@ -808,7 +788,7 @@ font-size: 48px;
     .explore {
         top:2700px;
     }
-}
+} 
 
 
  /* lg devices */

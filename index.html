@@ -9,6 +9,24 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>  
+    <script>
+    function shownav() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+    window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show'); 
+      }
+    }
+  }
+}  
+        
+        </script> 
     
 </head>
 
@@ -18,7 +36,6 @@
     
     <div class="nav">
         <img class='logo' src="img/logo.png" alt="logo"/>
-        <a><img class="navarrow" src="img/arrowbeige.png"></a>
     
     <div class="navtext"> 
         <a href="  "><u>Home</u></a>
@@ -26,6 +43,17 @@
         <a href="#recipes">Recipes</a> 
         <a href="#more"> More</a>
     </div>
+        
+    <div class="dropdown">
+  <a onclick="shownav()" class="dropbtn">Nav</a>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+        
+        
     </div>
     
     <!-- Landing Page-->
@@ -37,6 +65,36 @@
         <img class="fork" src="img/fork.png"/>
         <img class="arrow5" src="img/arrowblue.png"/>
     </div>
+    
+<div class= "info">
+    <div class= "col-12 block1">
+        <h1>Most Plastic Takes 1000 Years to breakdown</h1>
+        <img class="cup" src="img/cup.png">
+        
+        <p>New Zealand is one of the world's fastest-growing takeaway market, but an innocent takeaway meal can be accompanied by single-use plastic cutlery.</p>
+        <p>Even if you are being a tidy kiwi, a huge amount of waste never makes it to the landfil. Wind, rain and careless handling can cause rubbish to contaminate our environment.</p>
+    </div>
+    
+    <div class="col-sm-10 col-md-10 col-lg-6  block2">
+        <img class="sauce" src="img/sauce.png">
+        <h1>One garbage truck worth of plastic enters the ocean every minute.</h1>
+        <p>Single-use plastic is a huge part of our lives and landfil. Packaging made up 52% of plasics thrown away. Single-use-plastic frequently do not make it to a landfill to be recycled. A full 32% of the 78 million tons of plastic packaging produced annually is left to flow into our oceans. This is exspected to increase 4-fold by 2050. This means there could be more plastic than fish in the world's ocean. A large amount of that rubbish disintegrates into millions of micro plastics. These invisible particles contaminate our food and water supply, and we end up consuming them, An average person can end up comsuming up to 5 grams of micro plastic a week.</p>
+    </div>
+    
+    <div class="col-sm-12 col-md-12 col-lg-12 block3">
+        <img class="fish" src="img/fish.png">
+        <h1>There is a simple solution: eat in, avoid takeaways, reduce waste</h1>
+        <p>Making smart decisions when it comes to the choice between takeaways or eating in can have a huge impact. Of course, us Kiwi's don't need to ditch our fish and chips on the beach, but we do need to start at the source and reduce our plastic use, not only for our environment but for ourselves. If we eliminate single-use plastic, we can cut our plstic waste in half. Explore our range of recipies that are easy to recreate at home and ditch the single use takeaway plastic. </p>
+    </div>
+        
+    <div class="col-12 explore">
+        <h1>Explore the issue</h1> <p><img class="arrow" src="img/arrowblue.png"></p>
+    </div> 
+    
+</div>
+    
+    
+    <!-- Recipe Scroll -->
     
     <div id="recipes">
         <h1>Recipes</h1>

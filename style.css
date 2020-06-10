@@ -7,8 +7,8 @@ body {
 
 .nav {
     background-color: #153248;
-    width: 100%;
     height: 60px;
+    width: 100%
      position: fixed;
     z-index: 1; 
     }
@@ -34,12 +34,12 @@ body {
     display: none;
     }
 
-a {
+ a {
     text-decoration: none;
     color: #FAE9D7;
     }
 
-a:visited {
+ a:visited {
     text-decoration: none;
     color: #FAE9D7;
     }
@@ -48,12 +48,12 @@ a:visited {
 .dropbtn {
   background-image: url(img/arrowbeige.png);
     background-size: 80px;
-    color: green;
     font-weight: bolder;
     font-size: 40px;
-  border: none;
-  cursor: pointer;
+    cursor: pointer;
 }
+
+
 
 /* .dropbtn h4 {visibility: hidden;} */
 
@@ -112,7 +112,7 @@ float: right;
     text-align: center;
     letter-spacing: -0.055em;
     color: #1A354B;
-    padding-top: 150px;
+    padding-top: 100px;
     }
 
 .home h4 {
@@ -156,10 +156,7 @@ float: right;
 
 /*Info Page */
 .info {
-    height: 1650px;
     background-color: #1A354B;
-    font-family: Avenir Next;
-    font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 110%;
@@ -168,51 +165,42 @@ float: right;
 }
 
 .block1 {
-    width: 60%;
-    padding-top: 80px;
-    padding-left: 80px;
-    top:80px  
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px; 
+    margin: 0;
 }
 
 .block1 h1 {
-    position: relative;
-    width: 500px;
-    font-family: Avenir Next;
-    font-style: normal;
+    line-height: 90%;
     font-weight: 900;
     font-size: 48px;
-    line-height: 113%;
-    letter-spacing: -0.03em;
     color: #F8EBDE;
     }
 
 .block1 p {
-    position: relative;
-    width: 400px;
-    font-weight:bold;
+    font-size: 2vw;
+    font-weight: bold;
     padding-left: 80px; 
+    margin-right: 100px;
     }
+
 
 .block2 {
     float:right;
-    bottom:80px;
 }
 
 .block2 h1 {
-    position: relative;
-    width: 500px;
-    font-family: Avenir Next;
-    font-style: normal;
+   max-width: 500px;
     font-weight: 900;
     font-size: 48px;
-    line-height: 113%;
+    line-height: 90%;
     letter-spacing: -0.03em;
     color: #AFCBE1;
     }
 
 .block2 p {
-     position: relative;
-    width: 600px;
+    max-width: 600px;
     font-weight:bold;
     padding-left: 80px;
     }
@@ -222,28 +210,24 @@ float: right;
 }
 
 .block3 h1 {
-    position: relative;
-    width: 500px;
-    font-family: Avenir Next;
-font-style: normal;
+max-width: 500px;
 font-weight: 900;
 font-size: 48px;
-line-height: 113%;
+line-height: 90%;
 letter-spacing: -0.03em;
 color: #F8EBDE;
     }
 
 .block3 p {
-     position: relative;
     font-weight:bold;
-    padding-left: 80px;
+    padding-left: 50px;
     }
 
 .fish{
-     position: relative;
+    position: relative;
     height:auto;
     width: 800px;
-    height: 300pxpx;
+    height: 300px;
     transform: rotate(8.43deg);
 }
 
@@ -270,7 +254,8 @@ color: #F8EBDE;
     height:100px;
     position:absolute;
     top: 2120px;
-    padding-top: 30px
+    padding-top: 30px;
+    margin-bottom: 80px;
      }
 
 .explore h1 {
@@ -284,7 +269,7 @@ color: #F8EBDE;
 
 .arrow{
      height:auto;
-    width: 5%;
+    width: 15%;
     text-align:center;
 }
 
@@ -292,7 +277,7 @@ color: #F8EBDE;
 /* Scroll Recipes */
 
 div.scrollmenu {
-    background-color: #153248;
+    background-color: #D2E5F2;
     overflow: auto;
     white-space: nowrap;
     padding-top: 30px;
@@ -312,7 +297,7 @@ div.scrollmenu {
     transform: rotate(90deg);
     height: 50px;
     position:absolute;
-    top: 800px;
+    top: 100px;
     left: 20px;
     z-index: 0
     }   
@@ -321,17 +306,17 @@ div.scrollmenu {
     transform: rotate(-90deg);
     height: 50px;
     position: absolute;
-    top: 800px;
+    top: 700px;
     left: 1180px;
     z-index: 0
     }
 
 #recipes h1 {
     position: absolute;
-    top: 615px;
+    top: 2520px;
     left: 510px;
     z-index: 0;
-    color: #AFCBE1;
+    color: #153248;
     font-weight: 800;
     font-size: 50px;
     }
@@ -376,16 +361,16 @@ button:hover {
     text-align: center;
     font-weight: bold;
     color: #355975;
-    font-size: 3vw;
+    font-size: 6vw;
     }
 
-.collapse h3 {
+.collapse h4 {
     margin: auto;
     padding: 30px 120px;
     text-align: center;
     font-weight: bold;
     color: #355975;
-    font-size: 1vw;
+    font-size: 2vw;
     }
 
 .row h3 {
@@ -440,7 +425,7 @@ background-position: center; margin-bottom: 40px;}
 
 
 .donate {
-    height: 136px;
+    height: 135px;
     background-image: url(img/Shoot_11147.jpg);
     margin-bottom: 20px;
     background-size: 730px;
@@ -449,7 +434,7 @@ background-position: center; margin-bottom: 40px;}
 
 
 .factsheet {
-    height: 136px;
+    height: 135px;
     background-image: url(img/Shoot_11106.JPG);
     margin-bottom: 20px;
     background-size: 730px;
@@ -524,6 +509,14 @@ background-position: center; margin-bottom: 40px;}
     padding-left: 5px;
 }
 
+/* .tick {
+width: 50px;
+height: 50px;
+background: #C94334;
+position: relative;
+left: 625px;
+top: -110px;
+} */
 
 .footer {
     background-color: #153248;
@@ -534,20 +527,59 @@ background-position: center; margin-bottom: 40px;}
 
 /* Responsive media */
 
-/* sm devices */
+/* xs devices */
 
-@media (max-width: 768px) {
-    .block1 {
-        height: auto;
-        width: 100%;
+@media (max-width: 576px) {
+    
+    .navtext {display: none;}
+    
+    .logo {max-height: 38px;}
+     
+    .dropdown {display: block;
+        color: transparent;
+         height: 50px;
+         float: right;
+         margin-left: 60px;}
+     
+    .fork {max-height: 250px; 
+            left: 180px;
+            top: 300px;}
+     
+    .dots {
+         width: 500px;
+         height: 450px;
+         left: -50px;
+        top: 30px;}
+     
+    .home h1 {font-size: 60px;}
+     
+    .home h4 {
+        padding-left: 50px;
+        padding-right: 50px;}
+    
+    .arrow5 {
+        top: 510px;
+    left: 150px;
+        max-height: 70px;
+    }
+    
+    
     }
     .block1 h1 {
-        width:100%
+        font-size: 40px;
+        max-width: 350px;
+        padding-right: 30px;
     }
+    
+    .block1 p {
+        font-size: 20px;
+        padding: 0;
+        max-width: 350px;
+    }
+    
+    
     .cup{
         right:15px;
-        width:30%;
-        height:auto;
     }
     .sauce {
         right:200px;
@@ -559,54 +591,88 @@ background-position: center; margin-bottom: 40px;}
         height:auto;
     }
     .block2 {
-         height: auto;
-        width: 100%;
-        top:175px;
-
+        padding-top: 30px;
     }
+    
+    .block2 h1 {
+        font-size: 40px;
+        max-width: 350px;
+    }
+    
     .block2 p {
         width:100%;
     }
-    .info {
-        height:2280px;
-    }
+    
     .explore {
-      top:2780px; 
-        
+      top: 2900px;
         }
+
+    
     .block3 {
-        top:180px;
+       padding-top: 50px;
+        width: 350px;
+        padding-bottom: 100px;
     }
+
+.block3 h1 {
+    font-size: 40px;
+    max-width: 350px;
+    padding: 0;
+}
+
+    
+    .arrow1 {
+    transform: rotate(90deg);
+    height: 50px;
+    position:absolute;
+    top: 3250px;
+    left: 10px;
+    z-index: 0
+    }   
+
+.arrow2 {
+    transform: rotate(-90deg);
+    height: 50px;
+    position: absolute;
+    top: 3250px;
+    left: 310px;
+    z-index: 0
+    }
+
+#recipes h1 {
+    position: absolute;
+    top: 3050px;
+    left: 100px;
+    z-index: 0;
+    color: #AFCBE1;
+    font-weight: 800;
+    font-size: 50px;
+    }
+    
+
+
     .pic {height: 170px;}
+    
+  /*  .factsheet, .donate {
+        max-height: 70px; 
+    } */
+    
+    .email, .name {
+        margin-bottom: 10px;
+    }
+    
+    .arrow4, .arrow3{
+        height: 50px; margin-top: 10px;
+    }
+    
      
-    .navtext {display: none;}
-     
-    .dropdown {display: block;
-         height: 50px;
-         float: right;
-         margin-left: 80px;}
-     
-    .fork {max-height: 250px; 
-            left: 220px;
-            top: 300px;}
-     
-    .dots {
-         width: 600px;
-         height: 500px;
-         left: -20px;
-         top: -10px;}
-     
-    .home h1 {font-size: 60px;}
-     
-    .home h4 {
-        padding-left: 50px;
-        padding-right: 50px;}
+    
 }
 
   
 
 /* md devices */
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
      .block1 {
         height: auto;
         width: 100%;
@@ -646,7 +712,7 @@ background-position: center; margin-bottom: 40px;}
 
  /* lg devices */
 
-@media (min-width: 1200px){
+/* @media (min-width: 1200px){
     .block1{
         position:inherit;
     }
@@ -675,7 +741,7 @@ background-position: center; margin-bottom: 40px;}
     
     .pic {height: 150px;}
     
-}
+} */
 
 
 

@@ -13,6 +13,10 @@
     function shownav() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
+        
+       /* document.getElementById('hello_btn') .addEventListener('click', function(){
+        document.getElementById('hello_btn') .style.color = 'yellow'; */
+       
     window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -47,9 +51,9 @@
     <div class="dropdown">
   <a onclick="shownav()" class="dropbtn">Nav</a>
   <div id="myDropdown" class="dropdown-content">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
+    <a href="#">Issue</a>
+    <a href="#recipes">Recipes</a>
+    <a href="#more">More</a>
   </div>
 </div>
         
@@ -67,7 +71,7 @@
     </div>
     
 <div class= "info">
-    <div class= "col-12 block1">
+    <div class= "block1">
         <h1>Most Plastic Takes 1000 Years to breakdown</h1>
         <img class="cup" src="img/cup.png">
         
@@ -88,7 +92,7 @@
     </div>
         
     <div class="col-12 explore">
-        <h1>Explore the issue</h1> <p><img class="arrow" src="img/arrowblue.png"></p>
+        <h1>Explore Recipes</h1> <p><img class="arrow" src="img/arrowblue.png"></p>
     </div> 
     
 </div>
@@ -114,8 +118,8 @@
         <button data-toggle="collapse" data-target="#answer"><h4>See all</h4></button>
     <div id="answer" class="collapse">
             <h2>Recipes</h2>
-            <h3>For a delicous alternative to takeaways, try these bite-sized ‘fakeaway’ recipes created by Jamie Oliver. 
-                Save money, and the planet while enjoying your favourite comfort foods.</h3>
+            <h4>For a delicous alternative to takeaways, try these bite-sized ‘fakeaway’ recipes created by Jamie Oliver. 
+                Save money, and the planet while enjoying your favourite comfort foods.</h4>
             
         <div class="container">
             <div class="row">
@@ -156,7 +160,8 @@
                 <div class="col-12 col-md-12 col-xl-12 signup">
                     <h2>Sign Up</h2> <br>
                     <div class="name">Name</div>
-                    <div class="email">Email</div>                
+                    <div class="email">Email</div>
+                    <div class="tick"></div>
                 </div>
                     
                 </div>

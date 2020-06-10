@@ -8,30 +8,26 @@ body {
 .nav {
     background-color: #153248;
     height: 60px;
-    width: 100%
-     position: fixed;
+    width: 100%;
+    position: fixed;
     z-index: 1; 
     }
 
 .navtext {
-    color: #FAE9D7;
-    position: relative;
-    left: 500px;
-    padding-top: 10px;
-    text-align: right;
-    word-spacing: 3em;
-    font-size: 1.5vw;
-    padding-bottom: 10px;
-    display: inline-block; 
+    display: none; 
     }
 
 .logo {
-    max-height: 50px; 
+    max-height: 38px; 
     margin: 5px;
     } 
 
 .dropdown {
-    display: none;
+    display: block;
+        color: transparent;
+         height: 50px;
+         float: right;
+         margin-left: 60px;
     }
 
  a {
@@ -67,7 +63,7 @@ body {
 
 .dropdown {
   position: relative;
-  display: none;
+  display: block;
 float: right;
 }
 
@@ -108,7 +104,7 @@ float: right;
 .home h1 {
     margin: auto;
     font-weight: 900;
-    font-size: 90px;
+    font-size: 60px;
     text-align: center;
     letter-spacing: -0.055em;
     color: #1A354B;
@@ -117,11 +113,11 @@ float: right;
 
 .home h4 {
     margin: auto;
-    padding-left: 250px;
-    padding-right: 250px;
-    padding-top: 60px;
+    padding-left: 50px;
+        padding-right: 50px;
+    padding-top: 40px;
     font-weight: 600;
-    font-size: 2vw;
+    font-size: 15px;
     line-height: 120%;
     text-align: center;
     letter-spacing: -0.055em;
@@ -130,31 +126,33 @@ float: right;
 
 .dots {
     position: absolute;
-    width: 907.94px;
-    height: 600px;
-    left: 180.85px;
-    top: -70px;
+    width: 500px;
+         height: 450px;
+         left: -50px;
+        top: -30px;
+
     transform: rotate(1.36deg);
     z-index: 0;
-    }
+}
 
 .fork {
     position: absolute;
     transform: rotate(90deg);
-    max-height: 500px;
-    top: 220px;
-    left: 570px;
+    max-height: 250px; 
+        left: 180px;
+            top: 300px;
     z-index: 0;
     }
 
 .arrow5 {
     position: absolute;
-    max-height: 100px;
     top: 510px;
-    left: 540px;
+    left: 150px;
+        max-height: 70px;
     }
 
 /*Info Page */
+
 .info {
     background-color: #1A354B;
     font-weight: 600;
@@ -165,10 +163,10 @@ float: right;
 }
 
 .block1 {
-    padding-top: 50px;
-    padding-left: 30px;
-    padding-right: 30px; 
-    margin: 0;
+        max-width: 350px;
+        padding-right: 30px; 
+        padding-left: 30px;
+    padding-top: 30px;
 }
 
 .block1 h1 {
@@ -179,40 +177,42 @@ float: right;
     }
 
 .block1 p {
-    font-size: 2vw;
-    font-weight: bold;
-    padding-left: 80px; 
-    margin-right: 100px;
+    width: 100%;
+    font-weight:bold;
     }
 
 
 .block2 {
-    float:right;
+    padding-top: 30px;
 }
 
 .block2 h1 {
-   max-width: 500px;
+    padding-top: 20px;
+    font-size: 40px;
+    max-width: 350px;
     font-weight: 900;
-    font-size: 48px;
     line-height: 90%;
     letter-spacing: -0.03em;
     color: #AFCBE1;
     }
 
 .block2 p {
-    max-width: 600px;
+    width: 100%;
     font-weight:bold;
-    padding-left: 80px;
+    padding-right: 30px;
     }
 
 .block3 {  
-    padding: 40px;
+    padding-top: 50px;
+        width: 350px;
+        padding-bottom: 100px;
 }
 
 .block3 h1 {
-max-width: 500px;
+    font-size: 40px;
+    max-width: 350px;
+    padding: 0;
 font-weight: 900;
-font-size: 48px;
 line-height: 90%;
 letter-spacing: -0.03em;
 color: #F8EBDE;
@@ -225,25 +225,24 @@ color: #F8EBDE;
 
 .fish{
     position: relative;
-    height:auto;
-    width: 800px;
-    height: 300px;
+    width: 100%;
     transform: rotate(8.43deg);
+    padding-bottom: 20px;
 }
 
 .sauce{
      position: relative;
-     width: 300px;
-    height: 200px;
+    left: 150px;
+    width:30%;
+    height:auto;
     transform: rotate(-12.67deg);
-    margin-left: 350px;
-    padding-bottom: 20px  
 }
 
 .cup{
-     position: relative;
-    width: 200px;
-    height: 250px;
+    position: relative;
+    height: auto;
+    width: 30%;
+    right:15px;
     transform: rotate(-13.42deg);
     float:left;
     padding-right: 10px;
@@ -253,14 +252,12 @@ color: #F8EBDE;
     text-align: center;
     height:100px;
     position:absolute;
-    top: 2120px;
+    top: 2700px;
     padding-top: 30px;
     margin-bottom: 80px;
      }
 
 .explore h1 {
-    font-family: Avenir Next;
-    font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 120%;
@@ -273,6 +270,33 @@ color: #F8EBDE;
     text-align:center;
 }
 
+ .arrow1 {
+    transform: rotate(90deg);
+    height: 50px;
+    position:absolute;
+    top: 3250px;
+    left: 10px;
+    z-index: 0
+    }   
+
+.arrow2 {
+    transform: rotate(-90deg);
+    height: 50px;
+    position: absolute;
+    top: 3250px;
+    left: 310px;
+    z-index: 0
+    }
+
+#recipes h1 {
+    position: absolute;
+    top: 3050px;
+    left: 100px;
+    z-index: 0;
+    color: #AFCBE1;
+    font-weight: 800;
+    font-size: 50px;
+    }
 
 /* Scroll Recipes */
 
@@ -297,7 +321,7 @@ div.scrollmenu {
     transform: rotate(90deg);
     height: 50px;
     position:absolute;
-    top: 100px;
+    top: 3000px;
     left: 20px;
     z-index: 0
     }   
@@ -306,15 +330,15 @@ div.scrollmenu {
     transform: rotate(-90deg);
     height: 50px;
     position: absolute;
-    top: 700px;
-    left: 1180px;
+    top: 3000px;
+    left: 300px;
     z-index: 0
     }
 
 #recipes h1 {
     position: absolute;
-    top: 2520px;
-    left: 510px;
+    top: 2820px;
+    left: 80px;
     z-index: 0;
     color: #153248;
     font-weight: 800;
@@ -450,7 +474,7 @@ background-position: center; margin-bottom: 40px;}
 
 
  .signup {
-    height: 136px;
+    height: 80px;
     background-color: #355975;
     margin-bottom: 20px; 
     }
@@ -470,15 +494,18 @@ background-position: center; margin-bottom: 40px;}
     text-align: center;
     font-weight: 800;
     color: #355975;
-    font-size: 5vw;
+    font-size: 30px;
     }
+
+.factsheet, .donate {height: 80px;}
 
 .factsheet h2, .donate h2 {
     text-align: left;
-    padding-left: 10px;
+    position: relative;
+    top: -20px;
     font-weight: 700;
+    font-size: 20px;
     color: #FAE9D7;
-    padding-top: 10px;
     }
 
 .contact h2, .signup h2 {
@@ -490,10 +517,12 @@ background-position: center; margin-bottom: 40px;}
     }
 
  .arrow4, .arrow3 {
+     position: relative;
+     top: 20px;
+     left: 15px;
      transform: rotate(-90deg);
-     height: 60px;
+     height: 40px;
      float: right;
-     margin-top: 30px;
     }
 
 .name, .email {
@@ -503,7 +532,7 @@ background-position: center; margin-bottom: 40px;}
     position: relative;
     top: -60px;
     display: inline-block;
-    padding-right: 250px;
+    padding-right: 85px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 5px;
@@ -524,133 +553,151 @@ top: -110px;
     height: 60px;
 }
 
+.footer p {color: antiquewhite;}
 
 /* Responsive media */
 
-/* xs devices */
+/* xl devices */
 
-@media (max-width: 576px) {
+@media (min-width: 1200px) {
     
-    .navtext {display: none;}
+    .navtext {
+    color: #FAE9D7;
+    position: relative;
+    left: 500px;
+    padding-top: 10px;
+    text-align: right;
+    word-spacing: 3em;
+    font-size: 1.5vw;
+    padding-bottom: 10px;
+    display: inline-block; 
+    }
     
-    .logo {max-height: 38px;}
+    .logo {max-height: 50px;}
      
-    .dropdown {display: block;
+    .dropdown {
+        display: none;
         color: transparent;
          height: 50px;
          float: right;
-         margin-left: 60px;}
+         margin-left: 60px;
+    }
+         
+    
      
-    .fork {max-height: 250px; 
-            left: 180px;
-            top: 300px;}
+    .fork {
+    max-height: 500px;
+    top: 220px;
+    left: 570px;}
      
     .dots {
-         width: 500px;
-         height: 450px;
-         left: -50px;
-        top: 30px;}
+          width: 907.94px;
+    height: 600px;
+    left: 180.85px;
+    top: -70px;}
      
-    .home h1 {font-size: 60px;}
+    .home h1 {font-size: 90px;}
      
     .home h4 {
-        padding-left: 50px;
-        padding-right: 50px;}
+        padding-left: 250px;
+        padding-right: 250px;
+        font-size: 30px; }
     
     .arrow5 {
-        top: 510px;
-    left: 150px;
-        max-height: 70px;
+    max-height: 100px;
+    top: 510px;
+    left: 540px;
     }
     
-    
+    .block1{
+        margin-left: 50px;
+        
     }
+    
     .block1 h1 {
-        font-size: 40px;
-        max-width: 350px;
-        padding-right: 30px;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 800px;
     }
     
     .block1 p {
-        font-size: 20px;
-        padding: 0;
-        max-width: 350px;
+    font-weight: bold;
+    padding-left: 30px; 
+    padding-right: 30px;
+    width: 400px;
     }
     
     
     .cup{
-        right:15px;
+        width: 200px;
+    height: 250px;
     }
     .sauce {
-        right:200px;
-         width:40%;
-        height:auto;
+        width: 300px;
+    height: 200px;
+    margin-left: 350px;
+    padding-bottom: 20px  
     }
     .fish{
-         width:100%;
-        height:auto;
+    width: 550px;
+    height: 200px;
     }
+    
     .block2 {
-        padding-top: 30px;
+        left: 500px;
+        top: -100px;
     }
     
     .block2 h1 {
-        font-size: 40px;
-        max-width: 350px;
+    width: 700px;
+    font-size: 48px;
     }
     
     .block2 p {
-        width:100%;
+    max-width: 600px;
+    padding-left: 80px;
     }
     
     .explore {
-      top: 2900px;
+      top: 2580px;
         }
 
     
     .block3 {
-       padding-top: 50px;
-        width: 350px;
-        padding-bottom: 100px;
+       margin-left: 50px;
+        top: -100px;
     }
 
 .block3 h1 {
-    font-size: 40px;
-    max-width: 350px;
-    padding: 0;
+width: 700px;
+font-weight: 900;
+font-size: 48px;
 }
 
+    .block3 p{
+        width: 600px;
+    }
     
     .arrow1 {
-    transform: rotate(90deg);
-    height: 50px;
-    position:absolute;
-    top: 3250px;
-    left: 10px;
-    z-index: 0
+    height: 70px;
+    top: 2990px;
+    left: 20px;
     }   
 
 .arrow2 {
-    transform: rotate(-90deg);
-    height: 50px;
-    position: absolute;
-    top: 3250px;
-    left: 310px;
-    z-index: 0
+    height: 70px;
+    top: 2990px;
+    left: 1180px;
     }
 
 #recipes h1 {
-    position: absolute;
-    top: 3050px;
-    left: 100px;
-    z-index: 0;
-    color: #AFCBE1;
-    font-weight: 800;
-    font-size: 50px;
+    top: 2770px;
+    left: 510px;
     }
     
-
-
+    
+    
     .pic {height: 170px;}
     
   /*  .factsheet, .donate {
@@ -662,9 +709,63 @@ top: -110px;
     }
     
     .arrow4, .arrow3{
-        height: 50px; margin-top: 10px;
+        height: 70px; margin-top: 30px;
     }
     
+    .donate, .factsheet {
+    height: 135px;
+    margin-bottom: 20px;
+    background-size: 730px;
+    }
+
+
+
+.contact {
+    height: 448px;}
+
+
+
+ .signup {
+    height: 136px;
+    margin-bottom: 20px; 
+    }
+
+.row h2 {
+    font-weight: 600;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 4vw;
+    }
+
+#more h1 {
+    padding-bottom: 40x;
+    font-weight: 800;
+    font-size: 5vw;
+    }
+
+.factsheet h2, .donate h2 {
+    padding-left: 10px;
+    font-weight: 700;
+    padding-top: 10px;
+    }
+
+.contact h2, .signup h2 {
+    font-size: 30px;
+    padding-top: 10px;
+    padding-left: 10px;
+    }
+
+
+.name, .email {
+    font-size:1.5vw;
+    position: relative;
+    top: -60px;
+    display: inline-block;
+    padding-right: 250px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
      
     
 }
@@ -745,4 +846,4 @@ top: -110px;
 
 
 
-          
+

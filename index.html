@@ -11,14 +11,12 @@
     <script src="js/bootstrap.min.js"></script>  
     <script>
     function shownav() {
-  document.getElementById("myDropdown").classList.toggle("show");
+    document.getElementById("myDropdown").classList.toggle("show");
 }
         
-       /* document.getElementById('hello_btn') .addEventListener('click', function(){
-        document.getElementById('hello_btn') .style.color = 'yellow'; */
-       
+
     window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
+    if (!event.target.matches('.dropbtn')) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
@@ -51,11 +49,11 @@
     <div class="dropdown">
   <a onclick="shownav()" class="dropbtn">Nav</a>
   <div id="myDropdown" class="dropdown-content">
-    <a href="#">Issue</a>
+    <a href="#info">Issue</a>
     <a href="#recipes">Recipes</a>
     <a href="#more">More</a>
   </div>
-</div>
+    </div>
         
         
     </div>
@@ -169,7 +167,7 @@
         </div>
     </div>
 
-    <div class="footer">Recipe imagages copyright © 2020 JAMIE OLIVER ENTERPRISES LIMITED.  News site content copyright of the publisher.  All other images original work.  5/06/2020</div>
+    <div class="footer">Recipe imagages copyright © 2020 JAMIE OLIVER ENTERPRISES LIMITED. All other images original work.  5/06/2020</div>
     
     
     </body>

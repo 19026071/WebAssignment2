@@ -88,7 +88,7 @@ letter-spacing: -0.055em;
 color: #1A354B;
 }
 
-.back {margin-top: 80px; margin-left: 30px;}
+.back { position: relative; top: 60px; margin-left: 30px; color: #1A354B;}
 
 .heading h1 {
 margin-top: 20px;
@@ -100,7 +100,7 @@ color: #355975;
 }
 
 .wedges {
-    margin-top: 30px;
+    margin-top: 20px;
     background-image: url(img/996_2_1438704243.jpg);
     background-size: 400px;
     margin-left: 5px;
@@ -150,7 +150,7 @@ line-height: 150%;
 }
 
 .method ol {margin-left: 20px;
-margin-bottom: 40px;}
+margin-bottom: 10px; margin-right: 10px;}
 .ingredients ul {margin-left: 20px;
 margin-bottom: 40px;}
 
@@ -187,8 +187,8 @@ padding-top: 30px;
 }
 .scrollmenu img {display: inline-block; height: 300px; margin: 50px;}
 
-.arrow1 {transform: rotate(90deg); height: 50px; position: absolute; top: 3400px; left: 10px; z-index: 0}
-.arrow2 {transform: rotate(-90deg); height: 50px; position: absolute; top: 3400px; left: 300px; z-index: 0}
+.arrow1 {transform: rotate(90deg); height: 50px; position: absolute; top: 3350px; left: 10px; z-index: 0}
+.arrow2 {transform: rotate(-90deg); height: 50px; position: absolute; top: 3350px; left: 300px; z-index: 0}
 
 
 
@@ -204,7 +204,36 @@ padding-top: 30px;
 }
 
 
+@media (min-width: 992px){
+     .navtext {
+    color: #FAE9D7;
+    position: relative;
+    left: 300px;
+    padding-top: 10px;
+    text-align: right;
+    word-spacing: 3em;
+    font-size: 1.5vw;
+    padding-bottom: 10px;
+    display: inline-block; 
+    }
+    
+    .logo {max-height: 50px;}
      
+    .dropdown {
+        display: none;}
+    .arrow1 {top: 1850px; left: 10px;}
+.arrow2 {top: 1850px; left: 900px;}
+    
+.wedges {margin-top: 50px;} 
+    
+.method {
+    border-left-style: solid;
+    border-top-style: hidden;
+    border-left-color:#1A354B;
+    border-left-width: thick;}
+    
+    
+}
      
           
 @media (min-width: 1200px){
@@ -231,6 +260,8 @@ padding-top: 30px;
     }
     .back {}
     
+    #content {margin-top: 40px;}
+    
   .method {
     border-left-style: solid;
     border-top-style: hidden;
@@ -240,7 +271,7 @@ padding-top: 30px;
     .wedges { margin-left: 0px;
     margin-right: 0px;}
     .arrow1 {top: 1650px; left: 20px;}
-.arrow2 { top: 1650px; left: 1180px;}
+.arrow2 { top: 1650px; left: 1140px;}
     #recipes {
     margin: auto;
     text-align: center;

@@ -4,7 +4,7 @@
 <head>
    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" >
-    <title>Recipe</title> 
+    <title>Wedges Recipe</title> 
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="wedges.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -13,12 +13,9 @@
     function shownav() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
-        
-       /* document.getElementById('hello_btn') .addEventListener('click', function(){
-        document.getElementById('hello_btn') .style.color = 'yellow'; */
-       
+          
     window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
+    if (!event.target.matches('.dropbtn')) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
@@ -57,7 +54,7 @@
     
         <p><a href="index.html" class="back"><u>Back to Recipes</u></a></p>
         
-        <div class="container">
+        <div class="container" id="content">
             <div class="row">
             <div class=" col-12 col-md-5 col-xl-5 wedges"></div>
             <div class=" col-12 col-md-7 col-xl-7 heading">
@@ -125,20 +122,20 @@
         
         
     
-            <div id="recipes">
+    <div id="recipes">
     <img class="arrow1" src="img/arrowbeige.png">
    <img class="arrow2" src="img/arrowbeige.png"> 
-    <div class="scrollmenu">
-<img src="img/1428_2_1434098316.jpg">
-<img src="img/1588_9_1439908243.jpg">
-<img src="img/1432_24_1438681327.jpg">
-<img src="img/z-RLohGRfqM_large.jpg">
-<img src="img/BL38Wwt1Kv38ic5JzuVf36.jpg">
-</div>
+        <div class="scrollmenu">
+        <img src="img/1428_2_1434098316.jpg">
+        <img src="img/1588_9_1439908243.jpg">
+        <img src="img/1432_24_1438681327.jpg">
+        <img src="img/z-RLohGRfqM_large.jpg">
+        <img src="img/BL38Wwt1Kv38ic5JzuVf36.jpg">
+        </div>
     </div>
         
 
-<div class="footer">Recipe imagages copyright © 2020 JAMIE OLIVER ENTERPRISES LIMITED.  News site content copyright of the publisher.  All other images original work.  5/06/2020</div>
+<div class="footer">Recipe imagages copyright © 2020 JAMIE OLIVER ENTERPRISES LIMITED. All other images original work.  5/06/2020</div>
         
     
     </body>

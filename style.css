@@ -144,6 +144,7 @@ body {
     line-height: 110%;
     letter-spacing: -0.03em;
     color: #AFCBE1;   
+    height: 2200px;
 }
 
 .block1 {
@@ -244,7 +245,6 @@ body {
 .explore h1 {
     font-weight: 600;
     font-size: 20px;
-    line-height: 120%;
     color: #FAE9D7;
 }
 
@@ -366,20 +366,20 @@ button:hover {
 
 .collapse h2 {
     margin: auto;
-    padding-top: 30px;
+    padding-top: 20px;
     text-align: center;
     font-weight: bold;
     color: #355975;
-    font-size: 6vw;
+    font-size: 50px;
     }
 
 .collapse h4 {
     margin: auto;
-    padding: 30px 120px;
+    padding: 30px 50px;
     text-align: center;
     font-weight: bold;
     color: #355975;
-    font-size: 2vw;
+    font-size: 12px;
     }
 
 .row h3 {
@@ -528,7 +528,7 @@ background-position: center; margin-bottom: 40px;}
 .footer {
     background-color: #153248;
     width: 100%;
-    height: 60px;
+    height: 70px;
     color: #FAE9D7;
     font-size: 12px;
     text-align: center;
@@ -541,6 +541,156 @@ background-position: center; margin-bottom: 40px;}
 
 
 /* Responsive media */
+
+     /* md devices */
+
+ @media (min-width: 992px) {
+     
+     .navtext {
+    color: #FAE9D7;
+    position: relative;
+    left: 350px;
+    padding-top: 10px;
+    text-align: right;
+    word-spacing: 3em;
+    font-size: 1.5vw;
+    padding-bottom: 10px;
+    display: inline-block; 
+    }
+    
+    .logo {max-height: 50px;}
+     
+    .dropdown {
+        display: none;
+        color: transparent;
+        height: 50px;
+        float: right;
+        margin-left: 60px;
+    }
+     
+     .home h4 {
+         font-size: 25px;
+         padding-left: 100px;
+         padding-right: 100px;
+         
+     }
+    
+     .dots{
+       position:absolute;
+    width: 700px;
+    height: auto;
+    left: 170px;
+    top: -90px;
+    transform: rotate(1.36deg);
+     }
+     
+     .fork{
+         position: absolute;
+         max-height: 500px;
+        left: 450px;
+    top: 200px;
+      
+     }
+     
+     .arrow5{
+         position: absolute;
+    top: 510px;
+    left: 480px;
+     }
+     
+     
+     /*info*/
+     
+     #info{
+         height:1720px;
+     }
+     
+     .block1 {
+        height: auto;
+        width: 100%;
+    }
+    
+     .block2 {
+         height: auto;
+        width: 100%;
+        bottom:120px;
+        left:500px
+    }
+    .block2 p{
+        width:100%;
+    }
+    .block2 h1{
+        width:100%;
+    }
+ 
+    
+    .block3 {
+        
+        width: 100%;
+        bottom:150px
+    }
+      .sauce {
+        right:250px;
+    }
+     .cup {
+        right: 10px
+    }
+     .fish{
+         width:50%
+     }
+    .explore {
+        top:2150px;
+    }
+     
+    /*recipies*/
+     #recipies h1 {
+    top: 3050px;
+    left: 200px;
+    font-size: 50px;  
+  
+     }
+      .arrow1 {
+    transform: rotate(90deg);
+    height: 50px;
+   
+    top: 2530px;
+    right: 1050px;
+    z-index: 0
+    }   
+
+.arrow2 {
+    transform: rotate(-90deg);
+    height: 50px;
+   
+    top: 2530px;
+    left: 900px;
+    z-index: 0
+    }
+
+#recipes h1 {
+    
+    top: 2330px;
+    left: 460px;
+    font-weight: 800;
+    font-size: 50px;
+    }
+     
+     
+ .signup {
+    height: 120px;
+    margin-bottom: 20px;
+     
+     
+    }
+     
+     #more h1 {
+    padding-bottom: 40x;
+    font-size: 50px;
+    }
+} 
+
+
+
 
 /* xl devices */
 
@@ -576,10 +726,10 @@ background-position: center; margin-bottom: 40px;}
     left: 570px;}
      
     .dots {
-    width: 907.94px;
-    height: 600px;
-    left: 180.85px;
-    top: -100px;
+    width: 1000px;
+    height: auto;
+    left: 80px;
+    top: -200px;
     }
      
     .home h1 {font-size: 90px;}
@@ -598,6 +748,8 @@ background-position: center; margin-bottom: 40px;}
     
     .block1{
         margin-left: 50px;
+        padding-top: 0px;
+        margin-top: 0px;
         }
     
     .block1 h1 {
@@ -634,6 +786,7 @@ background-position: center; margin-bottom: 40px;}
     
     .block2 {
         left: 500px;
+        top: -300px;
     }
     
     .block2 h1 {
@@ -654,7 +807,7 @@ background-position: center; margin-bottom: 40px;}
     
     .block3 {
        margin-left: 50px;
-        top: -100px;
+        top: -400px;
     }
 
     .block3 h1 {
@@ -666,22 +819,32 @@ background-position: center; margin-bottom: 40px;}
     .block3 p{
         width: 600px;
     }
+   
+    .explore {
+        top:2150px;
+    }
     
     .arrow1 {
     height: 70px;
-    top: 2960px;
+    top: 2500px;
     left: 20px;
     }   
 
     .arrow2 {
     height: 70px;
-    top: 2960px;
-    left: 1180px;
+    top: 2500px;
+    left: 1100px;
     }
 
     #recipes h1 {
-    top: 2740px;
+    top: 2340px;
     left: 510px;
+    }
+
+
+.collapse h4 {
+    padding: 30px 120px;
+    font-size: 20px;
     }
     
     .pic {height: 170px;}
@@ -726,7 +889,7 @@ background-position: center; margin-bottom: 40px;}
 .factsheet h2, .donate h2 {
     padding-left: 10px;
     font-weight: 700;
-    padding-top: 10px;
+    padding-top: 30px;
     }
 
 .contact h2, .signup h2 {
@@ -751,78 +914,6 @@ background-position: center; margin-bottom: 40px;}
 }
 
   
-
-/* md devices 
- @media (min-width: 992px) {
-     .block1 {
-        height: auto;
-        width: 100%;
-    }
-     .cup {
-        right: 10px
-    }
-     .block2 {
-         height: auto;
-        width: 100%;
-        top:100px;
-    }
-    .block2 p{
-        width:100%;
-    }
-    .block2 h1{
-        width:100%;
-    }
-    .sauce {
-        right:250px;
-    }
-    
-    .block3 {
-        
-        width: 100%;
-        position:inherit
-    }
-    .info {
-        height:2200px;
-    }
-    
-    .explore {
-        top:2700px;
-    }
-} 
-
-
- /* lg devices */
-
-/* @media (min-width: 1200px){
-    .block1{
-        position:inherit;
-    }
-    .cup {
-        right: 10px;
-    }
-    
-    .block2 {
-        position:inherit;
-        
-    }
-    .sauce {
-        right:200px;
-    }
-    
-    .block3 {
-        position:relative;
-         
-    }
-    .info{
-      height:1900px;
-    }
-    .explore {
-        top:2375px;
-    }
-    
-    .pic {height: 150px;}
-    
-} */
 
 
 
